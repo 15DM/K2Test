@@ -9,80 +9,95 @@
 @import url("normalize.css");
 
 
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic');
 
 body{
-	font-family: Arial, Helvetica, sans-serif;
-	padding-top: 40px;
-	color: #C0C0C0;
-	font-weight: normal;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: 'Lato', sans-serif;
+	padding: 40px 20px 0 20px;
+	color: #CCCCCC;
+	font-weight: 700;
 	text-align: center;
 	}
 
-.btn{
-	text-transform: uppercase;
-	border: thin solid #DCDCDC;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-	font-weight: 300;
-	padding: 10px 48px;
-}
-
-.addtb{
-	text-transform: uppercase;
-	border: thin solid #DCDCDC;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-	font-weight: 300;
-	padding-left: 40px;
-	padding-right: 40px;
-}
-
-.wishlist, .share{
-	border:0;
-	padding: 4px;
-	margin: 8px;
-	font-size: 80%;
-	font-weight: 200;
-}
-
-a.wishlist, a.share{
+a.btn:hover{
 	background-color: transparent;
-	text-decoration: underline;
-}
-
-a.wishlist:hover, a.share:hover{
-	background-color: transparent;
-	text-decoration: underline;
-}
-
-@media screen and (max-width: 480px){
-
-	body{
-		padding: 40px 20px 0 20px;
 	}
 
-	.addtb, .wishlist{
-		display: block;
-		margin: 16px 0;
+.img-responsive{
+		width: 100%;
+		height: auto;
 	}
 
-	.wishlist{
+.addtb, .wishlist{
 	text-transform: uppercase;
 	border: thin solid #DCDCDC;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	font-weight: 300;
-	padding-left: 40px;
-	padding-right: 40px;
 	text-decoration: none;
 	font-size: 100%;
+	display: block;
+	margin: 16px auto;
+	padding: 10px 20px;
 	}
 
-	.pipe{
-		display: none;
+.share{
+	border:0;
+	padding: 4px;
+	margin: 0px 8px;
+	font-size: 80%;
+}
+
+.share::after{
+	content:" +";
+}
+
+a.share{
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.pipe{
+	display: none;
+	}
+
+
+
+@media screen and (min-width: 768px){
+
+.addtb{
+	margin-top: 0;
+	margin-bottom: 4px;
+	padding: 10px 0;
+	width: 146px;
+}
+
+.share, .wishlist{
+	text-transform: uppercase;
+	margin: 8px 6px;
+	background-color: lime;
+}
+
+a.share, 
+a.share:hover,
+a.wishlist, 
+a.wishlist:hover{
+	background-color: transparent;
+	text-decoration: underline;
+	font-size: 80%;
+	display: inline-block;
+	padding: 0;
+	border: none;
+}
+
+.share::after{
+	content:none;
+}
+
+.pipe{
+	display: inline;
+	font-size: 80%;
 	}
 
 }
