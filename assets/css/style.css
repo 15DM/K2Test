@@ -1,0 +1,88 @@
+/* DEFAULT COLOUR Palette 
+
+*/
+
+
+/* Import Botstrap css */
+@import url("bootstrap.css");
+@import url("bootstrap.theme.css");
+@import url("normalize.css");
+
+
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 40px;
+	color: #C0C0C0;
+	font-weight: normal;
+	text-align: center;
+	}
+
+.btn{
+	text-transform: uppercase;
+	border: thin solid #DCDCDC;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	font-weight: 300;
+	padding: 10px 48px;
+}
+
+.addtb{
+	text-transform: uppercase;
+	border: thin solid #DCDCDC;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	font-weight: 300;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.wishlist, .share{
+	border:0;
+	padding: 4px;
+	margin: 8px;
+	font-size: 80%;
+	font-weight: 200;
+}
+
+a.wishlist, a.share{
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a.wishlist:hover, a.share:hover{
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 480px){
+
+	body{
+		padding: 40px 20px 0 20px;
+	}
+
+	.addtb, .wishlist{
+		display: block;
+		margin: 16px 0;
+	}
+
+	.wishlist{
+	text-transform: uppercase;
+	border: thin solid #DCDCDC;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	font-weight: 300;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-decoration: none;
+	font-size: 100%;
+	}
+
+	.pipe{
+		display: none;
+	}
+
+}
